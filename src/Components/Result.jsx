@@ -6,7 +6,7 @@ const domainURL =`https://in.godaddy.com/domainsearch/find?checkAvail=1&domainTo
 const Result = ({item}) => {
   return (
     <div className='card'>
-        <a href={`${domainURL}${item}`}><p className="result">{item}</p></a>
+        <a target="_blank" href={`${domainURL}${item}`}><p className="result">{item}</p></a>
         
     </div>
   )

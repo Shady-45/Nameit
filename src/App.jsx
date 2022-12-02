@@ -14,7 +14,7 @@ const name =require('@rstacruz/startup-name-generator')
 const handleinputChange =(inputText)=>{
   setHeaderExpand(!inputText)
   
-  setNames(name(inputText))
+  setNames( inputText ?  name(inputText): name(''))
   console.log(name('cloud'));
   
  
